@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    
+    div {
+        text-align: center;
+    }
+    
+    .layout {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .div1 {
+        width: 100%;
+        height: 90px;
+        background: rgb(84, 84, 221);
+    }
+    
+    .div2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .div3 {
+        width: 100%;
+        height: 200px;
+        line-height: 200px;
+        background: rgb(221, 84, 84);
+    }
+    
+    .left {
+        width: 15%;
+        height: 300px;
+        background: rgb(221, 84, 180);
+    }
+    
+    .right {
+        width: 84%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        background: rgb(84, 221, 95);
+    }
+    
+    p {
+        height: 40px;
+        /* width: 100px; */
+    }
+    
+    .p1 {
+        height: 100px;
+        background: rgb(219, 221, 84);
+    }
+    
+    span {
+        vertical-align: middle;
+        width: 150px;
+        height: 100px;
+        display: inline-block;
+        background: red;
+    }
+    
+    .p2 {
+        /* order: 1; */
+        background: rgb(180, 180, 187);
+    }
+    
+    .p3 {
+        height: 80px;
+        flex-grow: 1;
+        background: rgb(84, 155, 221);
+    }
+    
+    .p4 {
+        flex-grow: 1;
+        background: rgb(214, 163, 75)
+    }
+</style>
+
+<body>
+    <div class="layout">
+        <div class="div1">我是div1</div>
+        <div class="div2">
+            <div class="left">我是左边</div>
+            <div class="right">
+                <p class="p1">我是P1</p>
+                <p class="p2">我是P2</p>
+                <p class="p3">我是P3</p>
+                <p class="p4">我是P4</p>
+                <p class="p1">我是P1</p>
+                <p class="p2">我是P2</p>
+                <p class="p3">我是P3</p>
+                <p class="p4">我是P4</p>
+            </div>
+
+        </div>
+        <div class="div3"><span></span>我是div3</div>
+
+    </div>
+</body>
+
+</html>
